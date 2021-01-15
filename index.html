@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <h1>AccoPiano</h1>
     <!-- RIGHT HAND KEYBOARD -->
     <div class="piano-container">
       <div data-note="c" class="key white"></div>
@@ -25,16 +32,17 @@
     </div>
 
     <!-- LEFT HAND KEYBOARD -->
-    <div class="left-container"></div>
-    <div class="bass-container">
-      <div data-note="bassF" class="key bass"></div>
-      <div data-note="bassC" class="key bass"></div>
-      <div data-note="bassG" class="key bass"></div>
-    </div>
-    <div class="accord-container">
-      <div data-note="accordF" class="key bass"></div>
-      <div data-note="accordC" class="key bass"></div>
-      <div data-note="accordG" class="key bass"></div>
+    <div class="left-container">
+      <div class="bass-container">
+        <div data-note="bassF" class="key bass">f</div>
+        <div data-note="bassC" class="key bass">c</div>
+        <div data-note="bassG" class="key bass">g</div>
+      </div>
+      <div class="accord-container">
+        <div data-note="accordF" class="key bass">fa</div>
+        <div data-note="accordC" class="key bass">ca</div>
+        <div data-note="accordG" class="key bass">ga</div>
+      </div>
     </div>
 
     <!-- AUDIO SAMPLES -->
