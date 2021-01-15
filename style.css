@@ -32,6 +32,14 @@ h1 {
 .key {
   width: var(--width);
   height: calc(var(--width) * 4);
+  box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.1),
+    inset -4px -4px 5px rgba(0, 0, 0, 0.1), 10px 20px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.key.press {
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.1),
+    0px 0px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 10px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 .key.white {
   --width: 40px;
@@ -77,6 +85,5 @@ h1 {
 .key.bass {
   width: 50px;
   height: 50px;
-  border: 1px solid #aaa;
   border-radius: 50%;
 }
