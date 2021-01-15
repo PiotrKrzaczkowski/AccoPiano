@@ -7,6 +7,44 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- RIGHT HAND KEYBOARD -->
+    <div class="piano-container">
+      <div data-note="c" class="key white"></div>
+      <div data-note="cis" class="key black"></div>
+      <div data-note="d" class="key white"></div>
+      <div data-note="dis" class="key black"></div>
+      <div data-note="e" class="key white"></div>
+      <div data-note="f" class="key white"></div>
+      <div data-note="fis" class="key black"></div>
+      <div data-note="g" class="key white"></div>
+      <div data-note="gis" class="key black"></div>
+      <div data-note="a" class="key white"></div>
+      <div data-note="ais" class="key black"></div>
+      <div data-note="h" class="key white"></div>
+      <div data-note="c" class="key white"></div>
+    </div>
+
+    <!-- LEFT HAND KEYBOARD -->
+    <div class="left-container"></div>
+    <div class="bass-container">
+      <div data-note="bassF" class="key bass"></div>
+      <div data-note="bassC" class="key bass"></div>
+      <div data-note="bassG" class="key bass"></div>
+    </div>
+    <div class="accord-container">
+      <div data-note="accordF" class="key bass"></div>
+      <div data-note="accordC" class="key bass"></div>
+      <div data-note="accordG" class="key bass"></div>
+    </div>
+
+    <!-- AUDIO SAMPLES -->
+    <audio src="./accordion samples/basy/Fbas.m4a" id="bassF"></audio>
+    <audio src="./accordion samples/basy/Cbas.m4a" id="bassC"></audio>
+    <audio src="./accordion samples/basy/Gbas.m4a" id="bassG"></audio>
+    <audio src="./accordion samples/basy/Fdur.m4a" id="accordF"></audio>
+    <audio src="./accordion samples/basy/Cdur.m4a" id="accordC"></audio>
+    <audio src="./accordion samples/basy/Gdur.m4a" id="accordG"></audio>
+
     <script src="./main.js"></script>
   </body>
 </html>
