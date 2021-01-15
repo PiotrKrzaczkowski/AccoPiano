@@ -34,3 +34,11 @@ document.addEventListener("keydown", (e) => {
   if (bassIndex > -1) play(bassDiv[bassIndex]);
   if (accordIndex > -1) play(accordDiv[accordIndex]);
 });
+
+const toggleBtn = document.querySelector(".legend-toggle");
+const legend = document.querySelector(".legend-text");
+let flag = false;
+toggleBtn.addEventListener("click", () => {
+  legend.classList.toggle("active");
+  flag = !flag;
+});

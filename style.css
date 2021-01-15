@@ -11,11 +11,47 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   background: radial-gradient(
     ellipse at bottom,
     rgb(5, 16, 26),
     rgb(12, 43, 73)
   );
+}
+.legend-wrapper {
+  position: absolute;
+  top: 5px;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #ddd;
+  font-family: "Poppins", sans-serif;
+}
+.legend-toggle {
+  display: block;
+  background: none;
+  margin-right: 15px;
+  padding: 5px;
+  font-family: "Poppins", sans-serif;
+  color: #777;
+  box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.1),
+    inset -4px -4px 5px rgba(0, 0, 0, 0.1), 10px 20px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: 0.3s;
+}
+.legend-toggle:hover {
+  box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.1),
+    0px 0px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 10px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.legend-text {
+  margin-top: 10px;
+  opacity: 0;
+}
+.legend-text.active {
+  opacity: 1;
 }
 h1 {
   margin-bottom: 30px;
